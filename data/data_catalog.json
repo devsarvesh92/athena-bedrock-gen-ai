@@ -1,0 +1,246 @@
+{
+    "accounts": {
+        "database": "accounts",
+        "table": "accounts",
+        "columns": [
+            {
+                "Name": "account_id",
+                "Type": "string"
+            },
+            {
+                "Name": "billing_cycle_day",
+                "Type": "tinyint"
+            },
+            {
+                "Name": "credit_limit",
+                "Type": "double"
+            },
+            {
+                "Name": "highest_credit_utilized",
+                "Type": "double"
+            },
+            {
+                "Name": "current_balance",
+                "Type": "double"
+            },
+            {
+                "Name": "account_opened_at",
+                "Type": "timestamp"
+            },
+            {
+                "Name": "approval_type",
+                "Type": "string"
+            },
+            {
+                "Name": "account_status",
+                "Type": "string"
+            },
+            {
+                "Name": "category_status",
+                "Type": "string"
+            },
+            {
+                "Name": "account_closed_at",
+                "Type": "string"
+            },
+            {
+                "Name": "account_closed_reason",
+                "Type": "string"
+            },
+            {
+                "Name": "number_of_days_past_due",
+                "Type": "smallint"
+            },
+            {
+                "Name": "program_name",
+                "Type": "string"
+            },
+            {
+                "Name": "user_id",
+                "Type": "string"
+            },
+            {
+                "Name": "product_name",
+                "Type": "string"
+            },
+            {
+                "Name": "bin",
+                "Type": "string"
+            },
+            {
+                "Name": "apr",
+                "Type": "string"
+            },
+            {
+                "Name": "product_id",
+                "Type": "string"
+            },
+            {
+                "Name": "balance_at_charge_off",
+                "Type": "string"
+            },
+            {
+                "Name": "charge_off_date",
+                "Type": "string"
+            },
+            {
+                "Name": "cp_account_number",
+                "Type": "string"
+            },
+            {
+                "Name": "business_name",
+                "Type": "string"
+            },
+            {
+                "Name": "business_website",
+                "Type": "string"
+            },
+            {
+                "Name": "business_phone",
+                "Type": "string"
+            },
+            {
+                "Name": "tenant",
+                "Type": "string",
+                "PartitionKey": "Partition (0)"
+            },
+            {
+                "Name": "report_date",
+                "Type": "string",
+                "PartitionKey": "Partition (1)"
+            }
+        ]
+    },
+    "payments": {
+        "database": "payments",
+        "table": "payments",
+        "columns": [
+            {
+                "Name": "id",
+                "Type": "string"
+            },
+            {
+                "Name": "pp_payment_transaction_id",
+                "Type": "string"
+            },
+            {
+                "Name": "account_id",
+                "Type": "string"
+            },
+            {
+                "Name": "schedule_id",
+                "Type": "string"
+            },
+            {
+                "Name": "schedule_status",
+                "Type": "string"
+            },
+            {
+                "Name": "schedule_type",
+                "Type": "string"
+            },
+            {
+                "Name": "schedule_frequency",
+                "Type": "string"
+            },
+            {
+                "Name": "scheduled_amount",
+                "Type": "string"
+            },
+            {
+                "Name": "method_id",
+                "Type": "string"
+            },
+            {
+                "Name": "method_name",
+                "Type": "string"
+            },
+            {
+                "Name": "signed_settled_payment_amount",
+                "Type": "double"
+            },
+            {
+                "Name": "transacted_at",
+                "Type": "timestamp"
+            },
+            {
+                "Name": "created_at",
+                "Type": "timestamp"
+            },
+            {
+                "Name": "process_type",
+                "Type": "string"
+            },
+            {
+                "Name": "payment_status",
+                "Type": "string"
+            },
+            {
+                "Name": "amount",
+                "Type": "double"
+            },
+            {
+                "Name": "bank_account_number",
+                "Type": "string"
+            },
+            {
+                "Name": "routing_number",
+                "Type": "string"
+            },
+            {
+                "Name": "bank_name",
+                "Type": "string"
+            },
+            {
+                "Name": "autopay",
+                "Type": "string"
+            },
+            {
+                "Name": "initiated_at",
+                "Type": "string"
+            },
+            {
+                "Name": "completed_at",
+                "Type": "string"
+            },
+            {
+                "Name": "returned_at",
+                "Type": "string"
+            },
+            {
+                "Name": "refunded_at",
+                "Type": "string"
+            },
+            {
+                "Name": "settled_at",
+                "Type": "string"
+            },
+            {
+                "Name": "returned_reason",
+                "Type": "string"
+            },
+            {
+                "Name": "effective_returned_at",
+                "Type": "string"
+            },
+            {
+                "Name": "updated_at",
+                "Type": "timestamp"
+            },
+            {
+                "Name": "pp_transaction_id",
+                "Type": "string"
+            },
+            {
+                "Name": "tenant",
+                "Type": "string",
+                "PartitionKey": "Partition (0)"
+            },
+            {
+                "Name": "report_date",
+                "Type": "string",
+                "PartitionKey": "Partition (1)"
+            }
+        ]
+    }
+}
